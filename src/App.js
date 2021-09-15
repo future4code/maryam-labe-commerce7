@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+
+import NavBar from "./components/NavBar";
+import Products from "./components/Products";
+import Cart from "./components/Cart";
+import Header from "./components/Header";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #feb2b2;
+  color: #718096;
+  min-height: 100vh;
+`;
+
+const Content = styled.div`
+  display: flex;
+`;
+
+const SectionProducts = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header />
+      <Content>
+        <NavBar />
+        <SectionProducts>
+          <Products />
+          <Cart />
+        </SectionProducts>
+      </Content>
+    </Container>
   );
 }
 
