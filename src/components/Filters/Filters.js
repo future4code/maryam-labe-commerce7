@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const FiltersContainer = styled.div`
-  
+border-radius: 10px; 
 padding: 10px;
 `;
 
@@ -11,6 +11,7 @@ const InputContainer = styled.label`
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 8px;
+  border-radius: 10px;
 `
 
 export class Filters extends React.Component {

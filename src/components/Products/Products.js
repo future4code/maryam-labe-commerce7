@@ -3,30 +3,29 @@ import { ProductCard } from './ProductCard'
 import styled from 'styled-components';
 
 const ProductsContainer = styled.div`
-
+//margin-bottom: 8px;
+//border-radius: 10px;
+border: #161616;
+color: #161616;
 `;
 
 const ProductsHeader = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:  20px;
-  background-color: #0077B5;
-  color: #fff;
-  border-radius:20px;
-  width:300px;
-  height:100px;
-`
+background-color: #787878;
+display: flex;
+align-items: center;  
+justify-content: space-between;
+padding: 0 10px;
 
+
+`;
 const ProductsGrid = styled.div`
-  
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
   padding: 20px;
-   background-color: #0077B5;
-  color: #fff;
-  border-radius:20px;
+   background-color: #f0f0f0;
+  color: #161616;
+ 
 `
 
 export class Products extends React.Component {
@@ -50,7 +49,10 @@ export class Products extends React.Component {
     const filteredAndOrderedList = this.getFilteredAndOrderedList()
     return <ProductsContainer>
       <ProductsHeader>
-      
+      <header>
+          <h1>Planets of the Solar System store</h1>
+          <input type="text" placeholder="Busca" id="campoDeBusca" />
+        </header>
         <p>Quantidade de Produtos: {filteredAndOrderedList.length}</p>
         <label>
           Ordenação:
