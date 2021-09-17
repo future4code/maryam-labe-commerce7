@@ -4,6 +4,8 @@ Somos uma empresa focada em venda de asteróides de pedras preciosas, materiais 
 
 A tecnologia utililzada para a construção do site foi o *React*, utilizando noções de JavaScript, CSS e HTML. Para a estilização do site usamos o *styled components*, um pacote do *React* que nos permitiu relizar a estilização dentro dos aruivos JavaScript.
 
+Nosso Link para o Surge: https://witty-blade.surge.sh/
+
 <h3>Filtros</h3>
 
 O site dipões de filtros por preço e nome do produto, além de uma opção para ordenar nossos pordutos a partir do mais caro, como também a partir do mais barato. 
