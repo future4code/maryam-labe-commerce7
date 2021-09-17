@@ -6,16 +6,31 @@ export const Container = styled.div`
   background-color: #fff;
   min-height: 100vh;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const SectionProducts = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const NavSection = styled.div`
@@ -26,6 +41,12 @@ export const NavSection = styled.div`
   padding: 20px;
   min-height: calc(100vh - 104px);
   margin-right: 40px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
 
   h1 {
     font-size: 20px;
@@ -42,6 +63,7 @@ export const NavSection = styled.div`
     border-radius: 4px;
     border: 1px solid transparent;
     margin-bottom: 20px;
+    background-color: #edf2f7;
   }
 `;
 
@@ -49,10 +71,16 @@ export const CartBoard = styled.div`
   display: flex;
   flex-direction: column;
   width: 320px;
-  background-color: #fff;
+  background-color: #edf2f7;
   padding: 20px;
   min-height: calc(100vh - 104px);
   margin-left: 40px;
+
+  @media (max-width: 768px) {
+    background-color: #fff;
+    margin: 0;
+    min-height: 100%;
+  }
 
   svg {
     width: 20px;
@@ -122,15 +150,31 @@ export const ProductsHeader = styled.div`
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   h1 {
     font-size: 20px;
     margin-right: 40px;
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
   }
 `;
 
 export const ProductsFilter = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   p {
     margin-right: 16px;
@@ -141,10 +185,18 @@ export const ProductsFilter = styled.div`
     border-radius: 4px;
     border: transparent;
     width: 128px;
+    background-color: #edf2f7;
+    margin-bottom: 10px;
   }
 `;
 
 export const ProductsCartContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;

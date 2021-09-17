@@ -17,6 +17,16 @@ const HeaderContainer = styled.div`
     font-family: "Italianno";
     font-size: 60px;
     color: #fff;
+
+    @media (max-width: 768px) {
+      font-size: 44px;
+    }
+  }
+
+  nav {
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   a {

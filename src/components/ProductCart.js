@@ -17,6 +17,10 @@ const Container = styled.div`
   position: relative;
   box-shadow: 0px 4px 8px rgba(150, 150, 150, 0.32);
 
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
+
   img {
     border-radius: 50%;
     width: 200px;

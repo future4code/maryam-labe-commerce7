@@ -142,7 +142,7 @@ export default class App extends React.Component {
           <SectionProducts>
             <ProductsContainer>
               <ProductsHeader>
-                <h1>Quantidade de produtos: 0</h1>
+                <h1>Quantidade de produtos: {this.state.products.length}</h1>
                 <Filters
                   sortOrder={this.state.sortOrder}
                   order={this.state.order}

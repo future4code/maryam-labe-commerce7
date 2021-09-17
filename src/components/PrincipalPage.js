@@ -10,6 +10,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const TextSection = styled.div`
@@ -19,10 +23,19 @@ const TextSection = styled.div`
   width: 600px;
   margin-right: 60px;
 
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 0;
+  }
+
   h1 {
     font-size: 40px;
     color: #fff;
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   h2 {
@@ -30,12 +43,21 @@ const TextSection = styled.div`
     text-align: center;
     color: #fff;
     font-weight: normal;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   img {
     height: 480px;
     width: 480px;
     border-radius: 20px;
+
+    @media (max-width: 768px) {
+      height: 240px;
+      width: 240px;
+    }
   }
 
   svg {
@@ -66,7 +88,7 @@ export default class PrincipalPage extends React.Component {
     return (
       <Container>
         <TextSection>
-          <h1>AST. STONE</h1>
+          <h1>AST. STONES</h1>
           <h2>
             A loja especializada em pedras preciosas originadas de asteróides,
             com a mais alta qualidade do mercado.
