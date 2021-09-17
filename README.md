@@ -20,5 +20,11 @@ Nosso site está completamente responsivo. Você pode realizar sua compra tanto 
 
 Nosso site está equipado com um armazenamento local no carrinho. Isso significa que, ao deixar o nosso site por algum motivo, ao voltar seus produtos ainda estarão lá no carrinho.
 
+Desktop
+![image](https://user-images.githubusercontent.com/69418670/133848197-afbe2f63-76cb-4315-a241-356b5a9e1c52.png)
+![image](https://user-images.githubusercontent.com/69418670/133848218-a5ae96f0-5188-404b-9779-59ffc77a2df2.png)
 
-
+Mobile
+![image](https://user-images.githubusercontent.com/69418670/133848233-04635541-196e-455b-9d4e-cfcca59174ac.png)
+![image](https://user-images.githubusercontent.com/69418670/133848248-b768f8d9-eba6-4569-a721-86f6326d50e6.png)
+![image](https://user-images.githubusercontent.com/69418670/133848259-296ad5cd-9e02-4ebb-9318-4eff3c292710.png)
